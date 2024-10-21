@@ -12,6 +12,34 @@ Repository: [https://github.com/ascender1729/django-task-api](https://github.com
 - RESTful API design
 - Built with Django and Django REST Framework
 
+## Project Workflow
+
+The following diagram illustrates the workflow of the Django Task API:
+
+![Django Task API Workflow](/workspaces/django-task-api/IMG.png)
+
+### Workflow Explanation
+
+1. **Client Interaction**: The process starts with a client (e.g., web browser, mobile app) sending an HTTP request to the Django web server.
+
+2. **Django Web Server**: Receives the request and routes it based on the URL patterns.
+
+3. **URL Routing**: The request is directed to the appropriate view (TaskViewSet) based on the URL pattern (/api/tasks/).
+
+4. **TaskViewSet**: This is the main view handling CRUD operations for tasks. It interacts with the database to query or update task data and uses the TaskSerializer to convert data between Python objects and JSON.
+
+5. **Database**: Stores all the task data and is interacted with via Django's ORM.
+
+6. **TaskSerializer**: Handles the conversion of task data between Python objects and JSON format.
+
+7. **Response**: The serialized data is sent back to the client as an HTTP response.
+
+8. **Django Admin Interface**: Allows admin users to manage tasks directly through a web interface.
+
+9. **Django ORM**: Used by developers to interact with the database using Python code.
+
+10. **Authentication**: Shown as a future feature that could be integrated into the workflow.
+
 ## Requirements
 
 - Python 3.8+
