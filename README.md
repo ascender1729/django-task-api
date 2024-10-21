@@ -16,7 +16,7 @@ Repository: [https://github.com/ascender1729/django-task-api](https://github.com
 
 The following diagram illustrates the workflow of the Django Task API:
 
-![Django Task API Workflow](/django-task-api/IMG.png)
+![Django Task API Workflow](IMG.png)
 
 ### Workflow Explanation
 
